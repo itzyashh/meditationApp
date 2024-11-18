@@ -1,18 +1,20 @@
-import { Text, View } from "react-native";
+import { FlatList, Text, View } from "react-native";
 
-export default function Index() {
+import { meditations } from "../data";
+import MeditationMenuItem from "@/components/MeditationMenuItem";
+
+
+export default function Page() {
   return (
-    <View
-      style={{
-        flex: 1,
-        justifyContent: "center",
-        alignItems: "center",
-        backgroundColor: "#f0f0f0",
-      }}
-    >
-      <Text className="font-bold text-4xl">
-        Edit app/index.tsx to edssssst this screen.
-      </Text>
-    </View>
+    <FlatList
+      className="bg-gray-950"
+      data={meditations}
+      contentContainerClassName="gap-5 p-5"
+      keyExtractor={(item) => item.id.toString()}
+      renderItem={({ item }) => (
+        <MeditationMenuItem meditation={item} />
+      )}
+    />
+
   );
 }
