@@ -6,7 +6,7 @@ export const meditations: Meditation[] = [
     title: "Quick Relaxation Boost",
     duration: 2,
     description: "A very quick session to help you relax instantly.",
-    audioUrl: "https://example.com/audio/2-minute-quick-relaxation.mp3",
+    audioUrl: require("../assets/audio/2Min-zen-cascade-meditation-spa-relaxation-2min.mp3"),
     isVideo: false,
     isPro: false
   },
@@ -15,7 +15,7 @@ export const meditations: Meditation[] = [
     title: "Morning Refresh",
     duration: 5,
     description: "A quick meditation session to relax and refresh.",
-    audioUrl: "https://example.com/audio/5-minute-meditation.mp3",
+    audioUrl: require("../assets/audio/5Min-mindfulness-relaxation-amp-meditation-music-22174.mp3"),
     isVideo: false,
     isPro: false
   },
@@ -24,7 +24,7 @@ export const meditations: Meditation[] = [
     title: "Midday Rejuvenation",
     duration: 10,
     description: "A short meditation session to help you unwind.",
-    audioUrl: "https://example.com/audio/10-minute-meditation.mp3",
+    audioUrl: require("../assets/audio/10Min-spa-ambient-10min-253179.mp3"),
     isVideo: false,
     isPro: true
   },
@@ -33,7 +33,7 @@ export const meditations: Meditation[] = [
     title: "Deep Relaxation",
     duration: 20,
     description: "A longer meditation session for deeper relaxation.",
-    audioUrl: "https://example.com/audio/20-minute-meditation.mp3",
+    audioUrl: require("../assets/audio/15min-gentle-piano-melodies-embracing-the-calm-waves-of-a-serene-evening-240215.mp3"),
     isVideo: false,
     isPro: true
   },
@@ -42,7 +42,7 @@ export const meditations: Meditation[] = [
     title: "Complete Serenity",
     duration: 30,
     description: "A comprehensive meditation session for complete relaxation.",
-    audioUrl: "https://example.com/audio/30-minute-meditation.mp3",
+    audioUrl: require("../assets/audio/30Min-spiritual-meditation-30-mins-201945.mp3"),
     isVideo: false,
     isPro: false
   }
