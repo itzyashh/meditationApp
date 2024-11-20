@@ -1,7 +1,21 @@
 import { Slot, Stack } from "expo-router"
 import "../../global.css";
+import Audio from "expo-audio";
+import { useEffect } from "react";
 
 const RootLayout = () => {
+
+
+  useEffect(() => {
+    const setAudioMode = async () => {
+      await Audio.setAudioModeAsync({
+        shouldPlayInBackground: true,
+      });
+    };
+
+    setAudioMode();
+  }, []);
+
     return <Stack>
         <Stack.Screen name="index" options={{ title: "Home" }}/>
         <Stack.Screen name="meditation/[id]" options={{ 
